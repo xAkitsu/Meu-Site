@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>profile</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
 </head>
 <body>
-    <video autoplay muted loop id="background-video">
-        <source src="./video/AYANOKOJI.mp4" type="video/mp4">
-        Seu navegador não suporta o vídeo.
-
-    </video>
+  <video autoplay muted loop id="background-video">
+    <source src="./video/AYANOKOJI.mp4" type="video/mp4">
+    Seu navegador não suporta o vídeo.
+  </video>
+  
+  <div class="controle-audio">
+    <button id="ativar-audio" class="icone-volume">🔊</button>
+    <input type="range" id="controle-volume" min="0" max="1" step="0.01" value="1">
+  </div>
 
     <div class="container-central">
       <div class="perfil"
@@ -23,10 +26,10 @@
            data-tilt-max-glare="0.2">
 
           <img src="./video/avatar.gif" alt="avatar" class="avatar">
-      
-          <div class="particulas">
+
+          <div class="titulo-com-fundo">
+            <img src="./video/glow.gif" alt="efeito partículas" class="gif-fundo">
             <h1>RBM</h1>
-            <div id="particulas"></div>
           </div>
 
           <h2>menos e mais</h2>
@@ -40,7 +43,7 @@
               </a>
           </div>
         </div>
-      </div>
+      </div>                   
 
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
