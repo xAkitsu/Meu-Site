@@ -32,3 +32,22 @@ volumeSlider.addEventListener('input', () => {
 
 // Atualiza o ícone ao carregar
 atualizarIconeVolume();
+
+document.addEventListener("DOMContentLoaded", function () {
+  const intro = document.getElementById("intro");
+  const video = document.getElementById("background-video");
+
+  intro.addEventListener("click", function () {
+    intro.classList.add("fade-out");
+
+    // Inicia o som do vídeo com volume baixo
+    video.muted = false;
+    video.volume = 0.1;
+    video.play();
+
+    // Remove o elemento da DOM após a transição
+    setTimeout(() => {
+      intro.remove();
+    }, 600);
+  });
+});
