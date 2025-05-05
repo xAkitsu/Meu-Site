@@ -77,10 +77,24 @@ h2 {
 }
 
 .redes img {
-  width: 20px;
-  margin: 0 5px;
-  margin-top: 60px;
-  transition: 0.3s;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  display: inline-block;
+  margin: 0 6px;
+  vertical-align: middle;
+}
+
+.redes a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.redes {
+  margin-top: 30px; /* reduza se quiser eles mais próximos do texto */
 }
 
 .redes img:hover {
